@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Cue Registration - Premium Pool Cue Auctions</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#home" class="logo">
+                    <img style="width: 190px;" src="Images/logo.png" alt="International Cue Registration">
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#browse">Browse Cues</a></li>
+                    <li><a href="#sell">Sell Your Cue</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login" class="login-btn">Login</a></li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse Cues</a></li>
+            <li><a href="#sell">Sell Your Cue</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="slide-background" style="background-image: url('Images/banner1.png');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Premium Pool Cue Auctions</h1>
+                        <p>Discover and trade authentic vintage and custom pool cues with verified provenance</p>
+                        <div class="hero-buttons">
+                            <a href="#sell" class="btn btn-outline">Browse Auctions</a>
+                            <a href="#sell" class="btn btn-outline">List Your Cue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide-background" style="background-image: url('Images/banner2.png');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Authentic Vintage Cues</h1>
+                        <p>Each cue comes with detailed specifications and authenticity documentation from trusted
+                            sellers
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-outline">View Collection</a>
+                            <a href="#about" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide-background" style="background-image: url('Images/banner3.png');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Sell Your Collectible Cues</h1>
+                        <p>Join thousands of collectors and dealers. List your cues with complete specifications and
+                            reach
+                            serious buyers worldwide</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-outline">Start Selling</a>
+                            <a href="#contact" class="btn btn-outline">Get Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" onclick="changeSlide(-1)" aria-label="Previous slide">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)" aria-label="Next slide">›</button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
+                <span class="indicator" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
+                <span class="indicator" onclick="currentSlide(3)" aria-label="Go to slide 3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <span class="section-tag">About International Cue Registration</span>
+                <h2>The Premier Destination for Pool Cue Collectors</h2>
+                <p class="lead">Since 2001, International Cue Registration has been the trusted marketplace
+                    connecting pool cue enthusiasts, collectors, and dealers worldwide. We specialize in authentic
+                    vintage
+                    cues,
+                    custom crafted pieces, and rare collectibles with verified provenance.</p>
+
+                <!-- <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>Expert Authentication</h4>
+                            <p>Every cue is verified by our team of experts with detailed specifications and
+                                provenance documentation to ensure authenticity and quality.</p>
+                        </div>
+                    </div>
+    
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>Secure Transactions</h4>
+                            <p>Protected payments, escrow services, and comprehensive buyer protection ensure safe and
+                                confident transactions for all parties.</p>
+                        </div>
+                    </div>
+    
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>Global Community</h4>
+                            <p>Connect with collectors, makers, and enthusiasts from around the world in our
+                                trusted and established marketplace.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>Quality Assurance</h4>
+                            <p>Every cue comes with our authenticity guarantee and detailed condition report,
+                                providing complete transparency and peace of mind.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Cues Sold</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">850+</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div> -->
+
+
+
+                <div class="additional-info">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>Trusted by Professionals</h4>
+                            <p>Professional players and serious collectors worldwide rely on our expertise and
+                                integrity.
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Comprehensive Database</h4>
+                            <p>Detailed records and documentation for every cue, including maker history and
+                                specifications.
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Expert Support</h4>
+                            <p>Our team provides personalized assistance and expert guidance throughout your journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-buttons">
+                    <a href="#browse" class="btn">Browse Collection</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cues Section -->
+    <section class="section" id="browse">
+        <div class="container">
+            <h2>Featured Antique Cues</h2>
+            <div class="cues-grid">
+                <div class="cue-card">
+                    <div class="auction-badge">Auction</div>
+                    <div class="cue-image"><img src="Images/listing1.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>1920s Brunswick Gold Crown</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Brunswick</span>
+                            </div>
+                        </div>
+                        <div class="price">$2,500</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge buy-now">Buy Now</div>
+                    <div class="cue-image"><img src="Images/listing2.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Meucci Custom Series</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.75 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Meucci</span>
+                            </div>
+                        </div>
+                        <div class="price">$1,800</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge">Auction</div>
+                    <div class="cue-image"><img src="Images/listing3.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Balabushka Replica</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Custom</span>
+                            </div>
+                        </div>
+                        <div class="price">$3,200</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge buy-now">Buy Now</div>
+                    <div class="cue-image"><img src="Images/cue1.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Schon Custom STL-1</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>6 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.5 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Schon Cues</span>
+                            </div>
+                        </div>
+                        <div class="price">$950</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge">Auction</div>
+                    <div class="cue-image"><img src="Images/cue2.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>McDermott G-Series Vintage</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>McDermott</span>
+                            </div>
+                        </div>
+                        <div class="price">$1,450</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge buy-now">Buy Now</div>
+                    <div class="cue-image"><img src="Images/cue3.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Predator Limited Edition</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Predator</span>
+                            </div>
+                        </div>
+                        <div class="price">$2,200</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge buy-now">Buy Now</div>
+                    <div class="cue-image"><img src="Images/cue4.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Schon Custom STL-1</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>6 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.5 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Schon Cues</span>
+                            </div>
+                        </div>
+                        <div class="price">$950</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge">Auction</div>
+                    <div class="cue-image"><img src="Images/cue5.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>McDermott G-Series Vintage</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>McDermott</span>
+                            </div>
+                        </div>
+                        <div class="price">$1,450</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <div class="auction-badge buy-now">Buy Now</div>
+                    <div class="cue-image"><img src="Images/cue6.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Predator Limited Edition</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Predator</span>
+                            </div>
+                        </div>
+                        <div class="price">$2,200</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div>
+                    </div>
+
+                </div>
+    </section>
+
+    <!-- Seller Form Section -->
+    <section class="section" id="sell">
+        <div class="container">
+            <h2>List Your Pool Cue</h2>
+            <div class="form-section">
+                <form>
+                    <h3 class="section-heading">Seller Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="seller-name">Full Name *</label>
+                            <input type="text" id="seller-name" name="seller-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-email">Email Address *</label>
+                            <input type="email" id="seller-email" name="seller-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-phone">Phone Number</label>
+                            <input type="tel" id="seller-phone" name="seller-phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-location">Location (City, State)</label>
+                            <input type="text" id="seller-location" name="seller-location">
+                        </div>
+                    </div>
+
+                    <h3 class="section-heading">Cue Specifications</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="cue-maker">Cue Maker *</label>
+                            <input type="text" id="cue-maker" name="cue-maker"
+                                placeholder="e.g., Brunswick, Meucci, Custom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="manufacture-date">Date of Manufacture</label>
+                            <input type="text" id="manufacture-date" name="manufacture-date"
+                                placeholder="e.g., 1920, 1950s, Unknown">
+                        </div>
+                        <div class="form-group">
+                            <label for="butt-length">Butt Length (inches) *</label>
+                            <input type="number" id="butt-length" name="butt-length" step="0.25" placeholder="29"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="butt-weight">Butt Weight (oz) *</label>
+                            <input type="number" id="butt-weight" name="butt-weight" step="0.1" placeholder="19"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaft-length">Shaft Length (inches) *</label>
+                            <input type="number" id="shaft-length" name="shaft-length" step="0.25" placeholder="29"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaft-weight">Shaft Weight (oz) *</label>
+                            <input type="number" id="shaft-weight" name="shaft-weight" step="0.1" placeholder="5"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaft-diameter">Shaft Diameter (mm) *</label>
+                            <input type="number" id="shaft-diameter" name="shaft-diameter" step="0.25" placeholder="13"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asking-price">Asking Price ($) *</label>
+                            <input type="number" id="asking-price" name="asking-price" step="0.01" placeholder="2500"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="cue-description">Detailed Description *</label>
+                        <textarea id="cue-description" name="cue-description"
+                            placeholder="Describe the cue's condition, history, unique features, any repairs, etc."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="loa-certificate">LOA/Certificate Information</label>
+                        <textarea id="loa-certificate" name="loa-certificate"
+                            placeholder="Provide details about any Letter of Authenticity, certificates, or proof of provenance"></textarea>
+                    </div>
+
+                    <h3 class="section-heading">Images & Documentation</h3>
+                    <div class="form-group full-width">
+                        <label>Cue Images (Multiple files allowed) *</label>
+                        <div class="file-upload">
+                            <input type="file" id="cue-images" name="cue-images" multiple accept="image/*"
+                                style="display: none;">
+                            <label for="cue-images">
+                                📷 Click to upload images of your cue<br>
+                                <small>Include photos of the full cue, butt, shaft, joint, tip, and any unique
+                                    details</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Certificate/LOA Documents</label>
+                        <div class="file-upload">
+                            <input type="file" id="certificates" name="certificates" multiple
+                                accept=".pdf,.jpg,.jpeg,.png" style="display: none;">
+                            <label for="certificates">
+                                📄 Click to upload certificates or documentation<br>
+                                <small>PDF, JPG, or PNG files accepted</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width" style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="submit-btn">Submit Cue Listing</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section"
+        style="padding: 4rem 0; background: var(--background); color: var(--foreground); position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+                <h2>What Our Community Says</h2>
+                <p>
+                    Trusted by collectors, dealers, and pool enthusiasts worldwide for authentic cues and secure
+                    transactions
+                </p>
+            </div>
+
+            <div class="uniqueTestimonialCarousel">
+                <div class="testimonial-carousel-container" style="overflow: hidden; position: relative;">
+                    <div class="testimonial-carousel-track" id="testimonialTrackUnique"
+                        style="display: flex; transition: transform 0.5s ease;">
+                        <!-- Slides -->
+                        <div class="testimonial-slide" style="flex: 0 0 100%; padding: 2rem; box-sizing: border-box;">
+                            <div class="testimonial-content"
+                                style="background: var(--card); color: var(--card-foreground); padding: 2rem; border-radius: var(--radius); box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                                <div class="testimonial-text">I've bought three vintage cues through this platform and
+                                    each
+                                    one was exactly as described. The authentication process gives me complete
+                                    confidence in
+                                    every purchase. Best marketplace for serious collectors!</div>
+                                <div class="rating"><span class="star">★</span><span class="star">★</span><span
+                                        class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                                <div class="testimonial-author"
+                                    style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+                                    <div class="avatar"
+                                        style="background-color: var(--primary); color: white; border-radius: 50%; width: 40px; height: 40px; display: grid; place-items: center; font-weight: bold;">
+                                        MJ</div>
+                                    <div class="author-info">
+                                        <h4 style="margin: 0;">Michael Johnson</h4>
+                                        <div class="role" style="font-size: 0.9rem; color: var(--muted-foreground);">
+                                            Professional Player</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Repeat similar slides (Total: 6) -->
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide" style="flex: 0 0 100%; padding: 2rem; box-sizing: border-box;">
+                            <div class="testimonial-content"
+                                style="background: var(--card); color: var(--card-foreground); padding: 2rem; border-radius: var(--radius); box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                                <div class="testimonial-text">As a seller, I appreciate how this platform protects both
+                                    buyers and sellers. The escrow service and detailed documentation process made
+                                    selling
+                                    my father's collection stress-free and profitable.</div>
+                                <div class="rating"><span class="star">★</span><span class="star">★</span><span
+                                        class="star">★</span><span class="star">★</span><span class="star">★</span>
+                                </div>
+                                <div class="testimonial-author"
+                                    style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+                                    <div class="avatar"
+                                        style="background-color: var(--primary); color: white; border-radius: 50%; width: 40px; height: 40px; display: grid; place-items: center; font-weight: bold;">
+                                        SR</div>
+                                    <div class="author-info">
+                                        <h4 style="margin: 0;">Sarah Rodriguez</h4>
+                                        <div class="role" style="font-size: 0.9rem; color: var(--muted-foreground);">Cue
+                                            Collector</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add 4 more slides exactly like above -->
+                        <!-- Slide 3 to 6 ... (omit here for brevity, use the same pattern) -->
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="testimonial-nav testimonial-btn-prev-unique" id="testimonialBtnPrevUnique"
+                    style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; background: var(--primary); border: none; padding: 0.5rem; border-radius: 50%; cursor: pointer; z-index: 10;">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" fill="none" />
+                    </svg>
+                </button>
+                <button class="testimonial-nav testimonial-btn-next-unique" id="testimonialBtnNextUnique"
+                    style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px; background: var(--primary); border: none; padding: 0.5rem; border-radius: 50%; cursor: pointer; z-index: 10;">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" fill="none" />
+                    </svg>
+                </button>
+
+                <!-- Dots -->
+                <div class="carousel-dots" id="testimonialDotsUnique" style="text-align: center; margin-top: 1rem;">
+                    <div class="dot active" data-slide="0"
+                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--primary); border-radius: 50%; margin: 0 5px; cursor: pointer;">
+                    </div>
+                    <div class="dot" data-slide="1"
+                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--muted-foreground); border-radius: 50%; margin: 0 5px; cursor: pointer;">
+                    </div>
+                    <div class="dot" data-slide="2"
+                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--muted-foreground); border-radius: 50%; margin: 0 5px; cursor: pointer;">
+                    </div>
+                    <div class="dot" data-slide="3"
+                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--muted-foreground); border-radius: 50%; margin: 0 5px; cursor: pointer;">
+                    </div>
+                    <div class="dot" data-slide="4"
+                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--muted-foreground); border-radius: 50%; margin: 0 5px; cursor: pointer;">
+                    </div>
+                    <div class="dot" data-slide="5"
+                        style="display: inline-block; width: 10px; height: 10px; background-color: var(--muted-foreground); border-radius: 50%; margin: 0 5px; cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 International Cue Registration. Premium Pool Cue Auctions. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
