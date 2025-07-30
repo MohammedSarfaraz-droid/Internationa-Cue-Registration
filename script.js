@@ -123,74 +123,45 @@ document.addEventListener( 'visibilitychange', () => {
 
 
 // Mobile menu functionality
-const hamburger = document.getElementById( 'hamburger' );
-const mobileMenu = document.getElementById( 'mobileMenu' );
-const overlay = document.getElementById( 'overlay' );
-const header = document.getElementById( 'header' );
+// Mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+        const header = document.getElementById('header');
 
-// Toggle mobile menu
-hamburger.addEventListener( 'click', () => {
-    hamburger.classList.toggle( 'active' );
-    mobileMenu.classList.toggle( 'active' );
-    overlay.classList.toggle( 'active' );
-    document.body.style.overflow = mobileMenu.classList.contains( 'active' ) ? 'hidden' : '';
-} );
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
 
-// Close mobile menu when overlay is clicked
-overlay.addEventListener( 'click', () => {
-    hamburger.classList.remove( 'active' );
-    mobileMenu.classList.remove( 'active' );
-    overlay.classList.remove( 'active' );
-    document.body.style.overflow = '';
-} );
+        overlay.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
 
-// Close mobile menu when a link is clicked
-const mobileLinks = mobileMenu.querySelectorAll( 'a' );
-mobileLinks.forEach( link => {
-    link.addEventListener( 'click', () => {
-        hamburger.classList.remove( 'active' );
-        mobileMenu.classList.remove( 'active' );
-        overlay.classList.remove( 'active' );
-        document.body.style.overflow = '';
-    } );
-} );
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
 
-// Header scroll effect
-window.addEventListener( 'scroll', () => {
-    if ( window.scrollY > 50 ) {
-        header.classList.add( 'scrolled' );
-    } else {
-        header.classList.remove( 'scrolled' );
-    }
-} );
-
-// Smooth scrolling for anchor links
-document.querySelectorAll( 'a[href^="#"]' ).forEach( anchor => {
-    anchor.addEventListener( 'click', function ( e ) {
-        e.preventDefault();
-        const target = document.querySelector( this.getAttribute( 'href' ) );
-        if ( target ) {
-            const headerHeight = header.offsetHeight;
-            const targetPosition = target.offsetTop - headerHeight;
-
-            window.scrollTo( {
-                top: targetPosition,
-                behavior: 'smooth'
-            } );
-        }
-    } );
-} );
-
-// Add keyboard navigation
-document.addEventListener( 'keydown', ( e ) => {
-    if ( e.key === 'Escape' && mobileMenu.classList.contains( 'active' ) ) {
-        hamburger.classList.remove( 'active' );
-        mobileMenu.classList.remove( 'active' );
-        overlay.classList.remove( 'active' );
-        document.body.style.overflow = '';
-    }
-} );
-
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
 
 
 // Add some interactivity for better UX
@@ -301,3 +272,122 @@ document.addEventListener( 'keydown', ( e ) => {
     track.addEventListener("mouseleave", startAutoplay);
     window.addEventListener("resize", updateCarousel);
   })();
+
+
+
+
+  // Function to submit wanted ad
+        function salesWantedSubmitWantedAd(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('sales-wanted-wanted-form');
+            const formData = new FormData(form);
+            
+            // Get form values
+            const cueBrand = formData.get('cueBrand');
+            const cueModel = formData.get('cueModel');
+            const priceRange = formData.get('priceRange');
+            const contactName = formData.get('contactName');
+            const description = formData.get('description');
+            
+            // Create new wanted ad card
+            const wantedGrid = document.getElementById('sales-wanted-wanted-grid');
+            const newWantedCard = document.createElement('div');
+            newWantedCard.className = 'sales-wanted-card sales-wanted-wanted-card';
+            
+            const title = cueModel ? `${cueBrand} ${cueModel}` : cueBrand;
+            const priceInfo = priceRange ? `<br><strong>Price Range:</strong> ${priceRange}` : '';
+            
+            newWantedCard.innerHTML = `
+                <div class="sales-wanted-wanted-title">Looking for: ${title}</div>
+                <div class="sales-wanted-wanted-details">
+                    ${description}${priceInfo}
+                </div>
+                <div class="sales-wanted-contact-info">
+                    <div class="sales-wanted-seller-name">Posted by: ${contactName}</div>
+                </div>
+                <span class="sales-wanted-status-badge sales-wanted-status-wanted">Wanted</span>
+            `;
+            
+            // Add to top of wanted ads
+            wantedGrid.insertBefore(newWantedCard, wantedGrid.firstChild);
+            
+            // Reset form
+            form.reset();
+            
+            // Show success message (you can customize this)
+            alert('Your wanted ad has been posted successfully!');
+            
+            // Add animation to new card
+            newWantedCard.style.opacity = '0';
+            newWantedCard.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+                newWantedCard.style.transition = 'all 0.5s ease';
+                newWantedCard.style.opacity = '1';
+                newWantedCard.style.transform = 'translateY(0)';
+            }, 100);
+        }
+
+        // Sample data arrays for dynamic content (for future use)
+        const salesWantedSalesData = [
+            {
+                id: '001',
+                name: 'McDermott G-Series',
+                price: 850,
+                buttLength: '29"',
+                buttWeight: '19 oz',
+                shaftLength: '29"',
+                shaftWeight: '5.2 oz',
+                shaftDiameter: '12.75 mm',
+                manufacturer: '2019',
+                description: 'Excellent condition McDermott cue with beautiful birdseye maple and intricate inlays. Well maintained, comes with original case.',
+                seller: 'John Smith',
+                status: 'Available'
+            }
+            // More entries can be added here
+        ];
+
+        const salesWantedWantedData = [
+            {
+                title: 'Meucci Original',
+                description: 'Searching for a vintage Meucci Original from the 1980s-1990s. Prefer good condition with original case. Any weight considered.',
+                poster: 'Robert Wilson'
+            }
+            // More entries can be added here
+        ];
+
+        // Function to load sales data dynamically (for future backend integration)
+        function salesWantedLoadSalesData() {
+            // This would typically fetch from your backend
+            // For now, the sample data is already in HTML
+        }
+
+        // Function to load wanted data dynamically (for future backend integration)
+        function salesWantedLoadWantedData() {
+            // This would typically fetch from your backend
+            // For now, the sample data is already in HTML
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            salesWantedLoadSalesData();
+            salesWantedLoadWantedData();
+        });
+
+
+
+
+// Back to top button functionality
+  const backToTopBtn = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'flex';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });

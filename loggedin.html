@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Cue Registration - Premium Pool Cue Auctions</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="Images/logo.png" alt="International Cue Registration">
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Criteria">Criteria</a></li>
+                    <li><a href="#Cue List">Cue List</a></li>
+                    <li><a href="#Addacue">Add a cue</a></li>
+                    <li><a href="#YourCues">Your Cues</a></li>
+                    <li><a href="#MemberSales">Member Sales</a></li>
+                    <li><a href="#Wanted">Wanted</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="index.html" class="sign-out-btn">Sign Out</a></li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Criteria">Criteria</a></li>
+            <li><a href="#cuelist">Cue List</a></li>
+            <li><a href="#addacue">Add a cue</a></li>
+            <li><a href="#yourcues">Your Cues</a></li>
+            <li><a href="#membersales">Member Sales</a></li>
+            <li><a href="#wanted">Wanted</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="index.html" class="sign-out-btn">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section  style="margin-top: 100px;" class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="slide-background" style="background-image: url('Images/banner1.png');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Premium Pool Cue Auctions</h1>
+                        <p>Discover and trade authentic vintage and custom pool cues with verified provenance</p>
+                        <div class="hero-buttons">
+                            <a href="#sell" class="btn btn-outline">Browse Auctions</a>
+                            <a href="#sell" class="btn btn-outline">List Your Cue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-slide">
+                <div class="slide-background" style="background-image: url('Images/banner2.png');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Authentic Vintage Cues</h1>
+                        <p>Each cue comes with detailed specifications and authenticity documentation from trusted
+                            sellers
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-outline">View Collection</a>
+                            <a href="#about" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-slide">
+                <div class="slide-background" style="background-image: url('Images/banner3.png');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Sell Your Collectible Cues</h1>
+                        <p>Join thousands of collectors and dealers. List your cues with complete specifications and
+                            reach
+                            serious buyers worldwide</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-outline">Start Selling</a>
+                            <a href="#contact" class="btn btn-outline">Get Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" onclick="changeSlide(-1)" aria-label="Previous slide">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)" aria-label="Next slide">›</button>
+            </div>
+    
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
+                <span class="indicator" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
+                <span class="indicator" onclick="currentSlide(3)" aria-label="Go to slide 3"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Cues Section -->
+    <section class="section" id="cuelist">
+        <div class="container">
+            <h2>Listed Antique Cues</h2>
+            <div class="cues-grid">
+                <div class="cue-card">
+                    <!-- <div class="auction-badge">Auction</div> -->
+                    <div class="cue-image"><img src="Images/listing1.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>1920s Brunswick Gold Crown #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Brunswick</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$2,500</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge buy-now">Buy Now</div> -->
+                    <div class="cue-image"><img src="Images/listing2.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Meucci Custom Series #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.75 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Meucci</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$1,800</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge">Auction</div> -->
+                    <div class="cue-image"><img src="Images/listing3.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Balabushka Replica #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Custom</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$3,200</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge buy-now">Buy Now</div> -->
+                    <div class="cue-image"><img src="Images/cue1.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Schon Custom STL-1 #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>6 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.5 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Schon Cues</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$950</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge">Auction</div> -->
+                    <div class="cue-image"><img src="Images/cue2.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>McDermott G-Series Vintage #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>McDermott</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$1,450</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge buy-now">Buy Now</div> -->
+                    <div class="cue-image"><img src="Images/cue3.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Predator Limited Edition #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Predator</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$2,200</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div> -->
+                    </div>
+
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge buy-now">Buy Now</div> -->
+                    <div class="cue-image"><img src="Images/cue4.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Schon Custom STL-1 #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>6 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.5 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Schon Cues</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$950</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge">Auction</div> -->
+                    <div class="cue-image"><img src="Images/cue5.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>McDermott G-Series Vintage #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>McDermott</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$1,450</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-primary">Bid Now</button>
+                            <button class="btn btn-outline">Watch</button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge buy-now">Buy Now</div> -->
+                    <div class="cue-image"><img src="Images/cue6.jpg" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Predator Limited Edition #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.8 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.2 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Predator</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$2,200</div>
+                        <div class="cue-actions">
+                            <button class="btn btn-success">Buy Now</button>
+                            <button class="btn btn-outline">Details</button>
+                        </div> -->
+                    </div>
+
+                </div>
+    </section>
+
+    <!-- Seller Form Section -->
+    <section class="section" id="addacue">
+        <div class="container">
+            <h2>Add/List Your Pool Cue</h2>
+            <div class="form-section">
+                <form>
+                    <h3 class="section-heading">Seller Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="seller-name">Full Name *</label>
+                            <input type="text" id="seller-name" name="seller-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-email">Email Address *</label>
+                            <input type="email" id="seller-email" name="seller-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-phone">Phone Number</label>
+                            <input type="tel" id="seller-phone" name="seller-phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-location">Location (City, State)</label>
+                            <input type="text" id="seller-location" name="seller-location">
+                        </div>
+                    </div>
+
+                    <h3 class="section-heading">Cue Specifications</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="cue-maker">Cue Maker *</label>
+                            <input type="text" id="cue-maker" name="cue-maker"
+                                placeholder="e.g., Brunswick, Meucci, Custom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="manufacture-date">Date of Manufacture</label>
+                            <input type="text" id="manufacture-date" name="manufacture-date"
+                                placeholder="e.g., 1920, 1950s, Unknown">
+                        </div>
+                        <div class="form-group">
+                            <label for="butt-length">Butt Length (inches) *</label>
+                            <input type="number" id="butt-length" name="butt-length" step="0.25" placeholder="29"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="butt-weight">Butt Weight (oz) *</label>
+                            <input type="number" id="butt-weight" name="butt-weight" step="0.1" placeholder="19"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaft-length">Shaft Length (inches) *</label>
+                            <input type="number" id="shaft-length" name="shaft-length" step="0.25" placeholder="29"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaft-weight">Shaft Weight (oz) *</label>
+                            <input type="number" id="shaft-weight" name="shaft-weight" step="0.1" placeholder="5"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="shaft-diameter">Shaft Diameter (mm) *</label>
+                            <input type="number" id="shaft-diameter" name="shaft-diameter" step="0.25" placeholder="13"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asking-price">Asking Price ($) *</label>
+                            <input type="number" id="asking-price" name="asking-price" step="0.01" placeholder="2500"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="cue-description">Detailed Description *</label>
+                        <textarea id="cue-description" name="cue-description"
+                            placeholder="Describe the cue's condition, history, unique features, any repairs, etc."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="loa-certificate">LOA/Certificate Information</label>
+                        <textarea id="loa-certificate" name="loa-certificate"
+                            placeholder="Provide details about any Letter of Authenticity, certificates, or proof of provenance"></textarea>
+                    </div>
+
+                    <h3 class="section-heading">Images & Documentation</h3>
+                    <div class="form-group full-width">
+                        <label>Cue Images (Multiple files allowed) *</label>
+                        <div class="file-upload">
+                            <input type="file" id="cue-images" name="cue-images" multiple accept="image/*"
+                                style="display: none;">
+                            <label for="cue-images">
+                                📷 Click to upload images of your cue<br>
+                                <small>Include photos of the full cue, butt, shaft, joint, tip, and any unique
+                                    details</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Certificate/LOA Documents</label>
+                        <div class="file-upload">
+                            <input type="file" id="certificates" name="certificates" multiple
+                                accept=".pdf,.jpg,.jpeg,.png" style="display: none;">
+                            <label for="certificates">
+                                📄 Click to upload certificates or documentation<br>
+                                <small>PDF, JPG, or PNG files accepted</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width" style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="submit-btn">Submit Cue Listing</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your Cues Section -->
+    <section style="margin-top: 100px;" class="section" id="yourcues">
+        <div class="container">
+            <h2>Your Cues</h2>
+            <div class="cues-grid">
+                
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge buy-now">Buy Now</div> -->
+                    <div class="cue-image"><img src="Images/listing2.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Meucci Custom Series #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>18.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>5.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>12.75 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Meucci</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$1,800</div>
+                            <div class="cue-actions">
+                                <button class="btn btn-success">Buy Now</button>
+                                <button class="btn btn-outline">Details</button>
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="cue-card">
+                    <!-- <div class="auction-badge">Auction</div> -->
+                    <div class="cue-image"><img src="Images/listing3.png" alt=""></div>
+                    <div class="cue-info">
+                        <h3>Balabushka Replica #0001</h3>
+                        <div class="cue-specs">
+                            <div class="spec-item">
+                                <span>Butt Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Butt Weight:</span>
+                                <span>19.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Length:</span>
+                                <span>29"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Shaft Weight:</span>
+                                <span>4.5 oz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Diameter:</span>
+                                <span>13.25 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span>Maker:</span>
+                                <span>Custom</span>
+                            </div>
+                        </div>
+                        <!-- <div class="price">$3,200</div>
+                            <div class="cue-actions">
+                                <button class="btn btn-primary">Bid Now</button>
+                                <button class="btn btn-outline">Watch</button>
+                            </div> -->
+                    </div>
+                </div>
+    </section>
+
+    <div class="sales-wanted-container">
+        <!-- Member Sales Section -->
+        <div id="membersales" class="sales-wanted-section">
+            <div class="sales-wanted-section-header">
+                <h1 class="sales-wanted-section-title">Member Sales</h1>
+                <p class="sales-wanted-section-subtitle">Browse registered cues available for sale by members</p>
+            </div>
+    
+            <div class="sales-wanted-cards-grid" id="sales-wanted-sales-grid">
+                <!-- Sample Sales Cards -->
+                <div class="sales-wanted-card">
+                    <div class="sales-wanted-card-image"><img style="height: 200px; width: 100%;" src="Images/cue3.jpg" alt=""></div>
+                    <div class="sales-wanted-card-header">
+                        <span class="sales-wanted-cue-number">#001</span>
+                        <span class="sales-wanted-price">$850</span>
+                    </div>
+                    <div class="sales-wanted-cue-name">McDermott G-Series</div>
+                    <div class="sales-wanted-specs-grid">
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Butt Length:</span> 29"
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Butt Weight:</span> 19 oz
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Length:</span> 29"
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Weight:</span> 5.2
+                            oz</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Diameter:</span>
+                            12.75 mm</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Manufacturer:</span> 2019
+                        </div>
+                    </div>
+                    <div class="sales-wanted-description">
+                        Excellent condition McDermott cue with beautiful birdseye maple and intricate inlays. Well
+                        maintained, comes with original case.
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Seller: John Smith</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-available">Available</span>
+                </div>
+    
+                <div class="sales-wanted-card">
+                    <div class="sales-wanted-card-image"><img style="height: 200px; width: 100%;" src="Images/cue6.jpg" alt=""></div>
+                    <div class="sales-wanted-card-header">
+                        <span class="sales-wanted-cue-number">#025</span>
+                        <span class="sales-wanted-price">$1,200</span>
+                    </div>
+                    <div class="sales-wanted-cue-name">Predator Throne</div>
+                    <div class="sales-wanted-specs-grid">
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Butt Length:</span> 29"
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Butt Weight:</span> 18.5
+                            oz</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Length:</span> 29"
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Weight:</span> 4.8
+                            oz</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Diameter:</span>
+                            11.75 mm</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Manufacturer:</span> 2021
+                        </div>
+                    </div>
+                    <div class="sales-wanted-description">
+                        Professional grade Predator with low deflection shaft. Perfect for serious players. Minimal wear,
+                        professionally maintained.
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Seller: Mike Johnson</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-available">Available</span>
+                </div>
+    
+                <div class="sales-wanted-card">
+                    <div class="sales-wanted-card-image"><img style="height: 200px; width: 100%;" src="Images/cue2.jpg" alt=""></div>
+                    <div class="sales-wanted-card-header">
+                        <span class="sales-wanted-cue-number">#047</span>
+                        <span class="sales-wanted-price">$650</span>
+                    </div>
+                    <div class="sales-wanted-cue-name">Schon Classic</div>
+                    <div class="sales-wanted-specs-grid">
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Butt Length:</span> 29"
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Butt Weight:</span> 19.5
+                            oz</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Length:</span> 29"
+                        </div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Weight:</span> 5.0
+                            oz</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Shaft Diameter:</span>
+                            13.0 mm</div>
+                        <div class="sales-wanted-spec-item"><span class="sales-wanted-spec-label">Manufacturer:</span> 2018
+                        </div>
+                    </div>
+                    <div class="sales-wanted-description">
+                        Beautiful Schon cue with ebony and ivory points. Traditional design with modern performance. Great
+                        for collectors.
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Seller: Sarah Davis</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-available">Available</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Wanted Section -->
+        <div id="wanted" class="sales-wanted-section">
+            <div class="sales-wanted-section-header">
+                <h1 class="sales-wanted-section-title">Wanted</h1>
+                <p class="sales-wanted-section-subtitle">Post or browse wanted ads for specific cues</p>
+            </div>
+    
+            <!-- Post Wanted Ad Form -->
+            <div class="sales-wanted-form-container">
+                <h2 class="sales-wanted-form-title">Post a Wanted Ad</h2>
+                <form id="sales-wanted-wanted-form" onsubmit="salesWantedSubmitWantedAd(event)">
+                    <div class="sales-wanted-form-grid">
+                        <div class="sales-wanted-form-group">
+                            <label class="sales-wanted-form-label" for="sales-wanted-cue-brand">Cue Brand/Name *</label>
+                            <input type="text" id="sales-wanted-cue-brand" name="cueBrand" class="sales-wanted-form-input"
+                                placeholder="e.g., McDermott, Predator, Meucci" required>
+                        </div>
+                        <div class="sales-wanted-form-group">
+                            <label class="sales-wanted-form-label" for="sales-wanted-cue-model">Model (Optional)</label>
+                            <input type="text" id="sales-wanted-cue-model" name="cueModel" class="sales-wanted-form-input"
+                                placeholder="e.g., G-Series, Throne, Original">
+                        </div>
+                        <div class="sales-wanted-form-group">
+                            <label class="sales-wanted-form-label" for="sales-wanted-price-range">Price Range</label>
+                            <input type="text" id="sales-wanted-price-range" name="priceRange"
+                                class="sales-wanted-form-input" placeholder="e.g., $500-$800, Up to $1000">
+                        </div>
+                        <div class="sales-wanted-form-group">
+                            <label class="sales-wanted-form-label" for="sales-wanted-contact-name">Your Name *</label>
+                            <input type="text" id="sales-wanted-contact-name" name="contactName"
+                                class="sales-wanted-form-input" placeholder="Your name" required>
+                        </div>
+                        <div class="sales-wanted-form-group sales-wanted-full-width">
+                            <label class="sales-wanted-form-label" for="sales-wanted-wanted-description">Description
+                                *</label>
+                            <textarea id="sales-wanted-wanted-description" name="description"
+                                class="sales-wanted-form-textarea"
+                                placeholder="Describe what you're looking for, condition preferences, specific features, etc."
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" class="sales-wanted-form-button">Post Wanted Ad</button>
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Existing Wanted Ads -->
+            <div class="sales-wanted-cards-grid" id="sales-wanted-wanted-grid">
+                <!-- Sample Wanted Cards -->
+                <div class="sales-wanted-card sales-wanted-wanted-card">
+                    <div class="sales-wanted-wanted-title">Looking for: Meucci Original</div>
+                    <div class="sales-wanted-wanted-details">
+                        Searching for a vintage Meucci Original from the 1980s-1990s. Prefer good condition with original
+                        case. Any weight considered.
+                        <br><strong>Price Range:</strong> $400-$600
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Posted by: Robert Wilson</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-wanted">Wanted</span>
+                </div>
+    
+                <div class="sales-wanted-card sales-wanted-wanted-card">
+                    <div class="sales-wanted-wanted-title">Looking for: Viking A-Series</div>
+                    <div class="sales-wanted-wanted-details">
+                        Need a Viking A-Series cue, preferably A228 or similar model. Looking for 19oz weight, good tip
+                        condition.
+                        <br><strong>Price Range:</strong> Up to $500
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Posted by: Lisa Chen</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-wanted">Wanted</span>
+                </div>
+    
+                <div class="sales-wanted-card sales-wanted-wanted-card">
+                    <div class="sales-wanted-wanted-title">Looking for: Joss Custom</div>
+                    <div class="sales-wanted-wanted-details">
+                        Seeking any Joss custom cue with butterfly joint. Open to various designs and weights. Must be
+                        authentic Joss.
+                        <br><strong>Price Range:</strong> $800-$1200
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Posted by: Tom Anderson</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-wanted">Wanted</span>
+                </div>
+    
+                <div class="sales-wanted-card sales-wanted-wanted-card">
+                    <div class="sales-wanted-wanted-title">Looking for: Balabushka Reproduction</div>
+                    <div class="sales-wanted-wanted-details">
+                        Looking for a high-quality Balabushka reproduction. Prefer GB or SLE series. Condition very
+                        important.
+                        <br><strong>Price Range:</strong> $600-$900
+                    </div>
+                    <div class="sales-wanted-contact-info">
+                        <div class="sales-wanted-seller-name">Posted by: Kevin Brown</div>
+                    </div>
+                    <span class="sales-wanted-status-badge sales-wanted-status-wanted">Wanted</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 International Cue Registration. Premium Pool Cue Auctions. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        ↑
+    </button>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
